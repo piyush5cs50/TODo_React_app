@@ -18,8 +18,10 @@ export default function NewListInput({onAdd,tasks,onEdit,selected}){
 
     function handleEdit(e){
         e.preventDefault()
-        onEdit(task,selected.idx)
+        if(task !== ''){
+            onEdit(task,selected.idx)
         setTask('')
+        }
     }
 
     return(

@@ -55,7 +55,7 @@ return value;
                 if(idx == ind-1){
                     return pre[ind]
                 }
-                else if(idx == ind && ind !== 0){
+                else if(idx == ind){
                     return pre[ind-1]
                 }
                 else{
@@ -106,14 +106,13 @@ return value;
      }))
     }
 
-    useEffect(() => {
-        console.log(tasks)
-        console.log('checks', checks)
-},[tasks,checks])
+//     useEffect(() => {
+// },[tasks,checks])
 
 
 useEffect(() => {
     // Check if there's any task with isSelected set to true
+    console.log(tasks)
     const selectedIndex = tasks.findIndex((task) => task.isSelected);
     setSelected({ val: selectedIndex !== -1, idx: selectedIndex });
 

@@ -17,14 +17,12 @@ ul{
 }
 
 .task_item button{
-    color: rgb(51, 51, 51);
-    /* padding: 10px; */
-    
+    color: rgb(190, 190, 190);
 }
 
 .task_item button:hover{
     box-shadow: 2px 2px 7px -3px black;
-    color: black;
+    color: white;
 }
 
 .task_item .task{
@@ -53,7 +51,30 @@ ul{
     margin-right: 8px;
 }
 
-.task_item .up{
+.task{
+    position: relative;
+}
+
+.buttons{
+    position: absolute;
+    right: 1.5%;
+    top: 28%;
+}
+
+.buttons div{
+    color: rgb(63, 63, 63);
+    margin-left: 7px;
+    font-family: bolder;
+    font-size: 14px;
+}
+
+.buttons div:hover{
+    color: black;
+    transform: scale(1.2);
+
+}
+
+/* .task_item .up{
     background-color: rgba(255, 255, 0, 0.493);
     font-weight: 600;
 }
@@ -61,16 +82,14 @@ ul{
 .task_item .down{
     background-color: rgba(0, 128, 0, 0.507);
     /* padding: 5px 9px;
-    margin-left: 2px; */
+    margin-left: 2px; 
     font-weight: 600;
-}
+}*/
 
-.task_item .delet{
+/* .task_item .delet{
     background-color: rgba(255, 0, 0, 0.5);
-    /* padding: 5px 9px;
-    margin-left: 2px; */
     font-weight: 600;
-}
+}  */
 
 input[type="checkbox"] {
     transform: scale(2.3); /* Adjust the scale factor to change the size */
